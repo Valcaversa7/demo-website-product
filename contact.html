@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Demo</title>
+  <meta name="description" content="Tell us what you need. WhatsApp, email, or visit the workshop." />
+  <meta name="theme-color" content="#07080a" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=demo" />
+</head>
+<body data-page="contact">
+  <div class="announce"><span><i></i> Replies on WhatsApp during shop hours</span></div>
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" fill="none"><rect width="64" height="64" rx="16" fill="#12141a"/><rect x="1" y="1" width="62" height="62" rx="15" stroke="#7aa7ff" stroke-opacity=".45"/><path d="M18 44V20h8.4l9.2 15.6V20H44v24h-8.4L26.4 28.4V44H18z" fill="#f3f4f6"/></svg>
+        <span class="logo-word">DEMO</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="shop.html?category=pcs">PCs</a>
+        <a href="shop.html?category=laptops">Laptops</a>
+        <a href="shop.html?category=phones">Phones</a>
+        <a href="shop.html?category=components">Components</a>
+        <a href="builder.html">PC Builder</a>
+        <a href="about.html" data-hide="wide">About</a>
+        <a href="contact.html" data-page="contact" data-hide="wide">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" data-open-search aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <a class="icon-btn" href="cart.html" data-open-cart onclick="event.preventDefault()" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/></svg><span class="cart-count">0</span></a>
+        <a class="btn btn-accent nav-builder" href="builder.html">PC Builder</a>
+        <button class="icon-btn menu-toggle" data-open-menu aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-hero">
+      <div class="kicker">Contact</div>
+      <h1>Looking for something specific?</h1>
+      <p>Tell us what you're looking for and we'll help you find the right device or build.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="info-list">
+        <div class="info-item"><small>WhatsApp</small><b>+1 (555) 014-2290</b><p class="lede">Fastest for stock checks and build questions.</p><a class="btn btn-whatsapp btn-sm" data-wa href="#" style="margin-top:10px">WhatsApp Us</a></div>
+        <div class="info-item"><small>Email</small><a href="mailto:hello@demo.store">hello@demo.store</a></div>
+        <div class="info-item"><small>Workshop</small><p>Unit 4, 180 Hardware Street<br />Workshop &amp; Showroom</p><p class="lede">Mon–Sat, 10:00–18:00</p></div>
+      </div>
+      <form class="form" data-contact-form>
+        <label for="name">Name</label>
+        <input id="name" name="name" required placeholder="Your name" />
+        <label for="contact">Email or phone</label>
+        <input id="contact" name="contact" required placeholder="How should we reply?" />
+        <label for="topic">I’m looking for</label>
+        <select id="topic" name="topic">
+          <option>A pre-owned PC</option>
+          <option>A laptop</option>
+          <option>A phone</option>
+          <option>A component</option>
+          <option>A custom build</option>
+          <option>Something else</option>
+        </select>
+        <label for="msg">Details</label>
+        <textarea id="msg" name="msg" required placeholder="Budget, games or apps, preferred condition…"></textarea>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="lede" style="font-size:.82rem">This demo form does not send email. Wire it to your inbox or WhatsApp before launch.</p>
+      </form>
+    </div>
+    <div class="faq" style="padding-bottom:80px;max-width:720px">
+      <h2 style="margin-bottom:8px">Quick answers</h2>
+      <details open><summary>Do you ship?</summary><p>Yes — replace this line with your courier and regions. Collection from the workshop is always available.</p></details>
+      <details><summary>Can I trade in?</summary><p>Bring the device in. We test it the same day and can deduct the offer from a purchase or custom build.</p></details>
+      <details><summary>What’s the warranty?</summary><p>90 days on pre-owned listings, one year on custom builds, unless a listing says otherwise.</p></details>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom"><span>© 2026 Demo. Demo storefront — swap phone, email, and address in js/data.js.</span></div>
+  </footer>
+  <div class="overlay"></div>
+  <aside class="drawer cart-drawer">
+    <div class="drawer-head"><strong>Cart</strong><button class="icon-btn" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+    <div class="drawer-body" data-cart-body></div>
+    <div class="drawer-foot"><div style="display:flex;justify-content:space-between;margin-bottom:12px"><span>Subtotal</span><strong data-cart-total>Discussions open</strong></div><a class="btn btn-primary btn-full" href="cart.html">View cart</a></div>
+  </aside>
+  <nav class="mobile-nav">
+    <button class="icon-btn" data-close style="align-self:flex-end" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="builder.html">PC Builder</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </nav>
+  <div class="search-modal">
+    <div class="search-box">
+      <div style="display:flex;justify-content:space-between;margin-bottom:12px"><span class="kicker">Search</span><button class="icon-btn" data-close-search aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+      <input data-search-input type="search" placeholder="Search products…" />
+      <div class="search-results" data-search-results></div>
+    </div>
+  </div>
+  <script type="module" src="js/app.js?v=demo"></script>
+</body>
+</html>

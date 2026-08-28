@@ -1,0 +1,11 @@
+{
+  "name": "demo-tech-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo storefront for pre-owned PCs, laptops, phones, components, and custom PC builds.",
+  "scripts": {
+    "dev": "npx --yes serve -l 3000 .",
+    "start": "npx --yes serve -l 3000 .",
+    "preview": "npx --yes serve -l 3000 ."
+  }
+}
